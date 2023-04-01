@@ -26,5 +26,19 @@ namespace Prototype.Controllers
 
             return View();
         }
+
+        public ActionResult SignUp() {
+            return View();
+        }
+
+        public ActionResult Sales()
+        {
+            return View();
+        }
+
+        public ActionResult SpecialRequest()
+        {
+            return View();
+        }
     }
 }
