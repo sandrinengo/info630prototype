@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Job Type";
+}
+
+<form>
+    <div class="tab-pane fade active show" id="home" role="tabpanel">
+        <div class="card border-secondary mb-3" style="max-width: 38rem;">
+            <div class="card-header">Manage Job Type</div>
+            <div class="card-body">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Job Type</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="* Enter job type">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea" class="form-label mt-4">Description</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-4 width-150px">Save</button>
+                    &nbsp;
+                    <button type="submit" class="btn btn-secondary mt-4 width-150px">Clear</button>
+                </fieldset>
+
+            </div>
+        </div>
+
+        <fieldset>
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">Job Type</th>
+                        <th scope="col" style="width:40%;">Description</th>
+                        <th scope="col">Active</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Management</th>
+                        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</td>
+                        <td>Yes</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Deactivate</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">IT</th>
+                        <td>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000</td>
+                        <td>Yes</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Deactivate</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+</form>
+

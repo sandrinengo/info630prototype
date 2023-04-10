@@ -18,14 +18,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav me-auto">
-                    @*<li class="nav-item">
-                        <a class="nav-link active" href="@Url.Action("Index", "Home")">
-                            Home
-                            <span class="visually-hidden">(current)</span>
-                        </a>
-                    </li>*@
                     <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Sales", "Home")">Sales</a>
+                        <a class="nav-link active" href="@Url.Action("Sales", "Home")">Sales</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("SpecialRequest", "Home")">Special Request</a>
@@ -33,23 +27,20 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Admin</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="@Url.Action("Employee", "Admin")">Manage Employee</a>
-                            <a class="dropdown-item" href="@Url.Action("JobType", "Admin")">Manage Job Type</a>
-                            <a class="dropdown-item" href="@Url.Action("Position", "Admin")">Manage Position</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="@Url.Action("Supplier", "Admin")">Manage Supplier</a>
-                            <a class="dropdown-item" href="@Url.Action("RequestType", "Admin")">Manage Request Type</a>
-                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="@Url.Action("Category", "Admin")">Manage Category</a>
-                            <a class="dropdown-item" href="@Url.Action("Product", "Admin")">Manage Product</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="@Url.Action("ExpenseType", "Admin")">Manage Expense Type</a>
-                            <a class="dropdown-item" href="@Url.Action("Expense", "Admin")">Manage Expense</a>
-                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="@Url.Action("Employee", "Admin")">Manage Employee</a>
                             <a class="dropdown-item" href="@Url.Action("EventType", "Admin")">Manage Event Type</a>
                             <a class="dropdown-item" href="@Url.Action("Event", "Admin")">Manage Event</a>
+                            <a class="dropdown-item" href="@Url.Action("ExpenseType", "Admin")">Manage Expense Type</a>
+                            <a class="dropdown-item" href="@Url.Action("Expense", "Admin")">Manage Expense</a>
+                            <a class="dropdown-item" href="@Url.Action("JobType", "Admin")">Manage Job Type</a>
+                            <a class="dropdown-item" href="@Url.Action("Position", "Admin")">Manage Position</a>
+                            <a class="dropdown-item" href="@Url.Action("Product", "Admin")">Manage Product</a>
+                            <a class="dropdown-item" href="@Url.Action("RequestType", "Admin")">Manage Request Type</a>
+                            <a class="dropdown-item" href="@Url.Action("SpecialRequest", "Admin")">Manage Special Request</a>
+                            <a class="dropdown-item" href="@Url.Action("Supplier", "Admin")">Manage Supplier</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="@Url.Action("Special Request", "Admin")">Manage Special Request</a>
+                            <a class="dropdown-item" href="@Url.Action("Inventory", "Admin")">View Inventory</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">

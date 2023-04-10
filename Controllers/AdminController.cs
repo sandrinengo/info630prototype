@@ -64,5 +64,19 @@ namespace Prototype.Controllers
         {
             return View();
         }
+
+        public ActionResult Inventory()
+        {
+            return View();
+        }
+
+        public ActionResult InventoryDetails()
+        {
+            return View();
+        }
+
+        public ActionResult SpecialRequest() { 
+            return View();
+        }
     }
 }

@@ -17,5 +17,10 @@ namespace Prototype.Controllers
         {
             return View();
         }
+
+        public ActionResult Inventory()
+        {
+            return View();
+        }
     }
 }

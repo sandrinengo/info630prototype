@@ -155,6 +155,7 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\INFO630 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -200,6 +201,9 @@
     <Content Include="Views\Admin\RequestType.cshtml" />
     <Content Include="Views\Report\Sales.cshtml" />
     <Content Include="Views\Report\Employee.cshtml" />
+    <Content Include="Views\Admin\SpecialRequest.cshtml" />
+    <Content Include="Views\Report\Inventory.cshtml" />
+    <Content Include="Views\Admin\InventoryDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

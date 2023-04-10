@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewBag.Title = "Supplier";
+}
+
+<form>
+    <div class="tab-pane fade active show" id="home" role="tabpanel">
+        <div class="card border-secondary mb-3" style="max-width: 38rem;">
+            <div class="card-header">Manage Supplier</div>
+            <div class="card-body">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Supplier Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="* Enter supplier name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="* Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Phone</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="* Enter phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="* Enter address">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5">
+                            <label class="form-label mt-4">City</label>
+                            <input type="text" class="form-control col-1 required" id="txtCity" placeholder="* Enter city" maxlength="50">
+                        </div>
+                        <div class="col-sm-3">
+                            <label class="form-label mt-4">State</label>
+                            <select class="form-select" id="exampleSelect1">
+                                <option>VA</option>
+                                <option>NC</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="form-label mt-4">Zip Code</label>
+                            <input type="text" class="form-control col-1 required" id="txtZipCode" maxlength="5" placeholder="* Enter zip code">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-4 width-150px">Save</button>
+                    &nbsp;
+                    <button type="submit" class="btn btn-secondary mt-4 width-150px">Clear</button>
+                </fieldset>
+            </div>
+        </div>
+        <fieldset>
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">Supplier Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Active</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">AAAA</th>
+                        <td>aaa@aaa.com</td>
+                        <td>(804) 777-1111</td>
+                        <td>Yes</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Deactivate</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">BBBB</th>
+                        <td>bbb@bbb.com</td>
+                        <td>(804) 111-1111</td>
+                        <td>Yes</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Deactivate</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+</form>
+

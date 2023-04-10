@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body class="remove-all-margin-padding">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Antique Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Sales", "Home")">Sales</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Admin</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Manage Employee</a>
+                            <a class="dropdown-item" href="#">Manage Job Type</a>
+                            <a class="dropdown-item" href="#">Manage Position</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Manage Contact</a>
+                            <a class="dropdown-item" href="#">Manage Supplier</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Manage Category</a>
+                            <a class="dropdown-item" href="#">Manage Product</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Manage Expense Type</a>
+                            <a class="dropdown-item" href="#">Manage Expense</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Manage Event Type</a>
+                            <a class="dropdown-item" href="#">Manage Event</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <a class="btn btn-outline-primary my-3 my-sm-3" href="@Url.Action("Index", "Home")">Sign in</a>
+                    &nbsp;
+                    <a class="btn btn-outline-secondary my-3 my-sm-3" href="@Url.Action("SignUp", "Home")">Sign up</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content remove-all-margin-padding">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    
+    @RenderSection("scripts", required: false)
+</body>
+</html>
