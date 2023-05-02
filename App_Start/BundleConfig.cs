@@ -27,6 +27,9 @@ namespace Prototype
                       "~/Content/bootstrap.css",
                       "~/Content/main-theme.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/custom").Include(
+                   "~/Scripts/common.js"));
         }
     }
 }
