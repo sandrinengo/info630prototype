@@ -20,12 +20,12 @@
                         <div class="form-group col-sm-7">
                             <label for="exampleInputEmail1" class="form-label mt-4">Email</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control">
+                                <input type="email" class="form-control" aria-describedby="emailHelp">
                             </div>
                         </div>
                         <div class="form-group col-sm-5">
                             <label for="exampleInputEmail1" class="form-label mt-4">Phone</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="text" class="form-control phone" id="txtPhone">
                         </div>
                     </div>
                     <div class="form-group">
@@ -44,9 +44,11 @@
                     &nbsp;
                     <button type="submit" class="btn btn-secondary mt-4 width-150px">Clear</button>
                 </fieldset>
-
             </div>
         </div>
     </div>
 </form>
-
+<script>
+     NumberOnly(".phone");
+     FormatPhoneNumber();
+</script>

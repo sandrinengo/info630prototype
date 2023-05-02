@@ -66,14 +66,14 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <fieldset>
+                        <fieldset id="cate">
                             <table>
                                 <tr>
                                     <td colspan="4"><strong>Category</strong></td>
                                 </tr>
                                 <tr>
                                     <td style="width:5%;">
-                                        <div class="alert alert-dismissible alert-primary" style="white-space: nowrap;">
+                                        <div id="divHome" class="alert alert-dismissible alert-primary" style="white-space: nowrap;">
                                             <strong>Home Decoration</strong>
                                         </div>
                                     </td>
@@ -83,7 +83,7 @@
                                         </div>
                                     </td>
                                     <td style="width: 5%;">
-                                        <div class="alert alert-dismissible alert-primary" style="white-space: nowrap;">
+                                        <div id="divCollectible" class="alert alert-dismissible alert-primary" style="white-space: nowrap;">
                                             <strong>Collectables</strong>
                                         </div>
                                     </td>
@@ -139,6 +139,46 @@
                                 </tr>
                             </table>
                         </fieldset>
+                        <fieldset id="collectible" style="display:none;">
+                            <table>
+                                <tr class="close">
+                                    <td style="width:2%;">
+                                        <img src="https://m.media-amazon.com/images/I/61ZlG2LJGtL._AC_UL400_.jpg" width="150" height="150" />
+                                    </td>
+                                    <td style="width: 5%;">
+                                        <strong>American Compass</strong>
+                                    </td>
+                                </tr>
+                                <tr class="close">
+                                    <td style="width:2%;">
+                                        <img src="https://m.media-amazon.com/images/I/816G2qjg4LL._AC_UL400_.jpg" width="150" height="150" />
+                                    </td>
+                                    <td style="width: 5%;">
+                                        <strong>Antique Brass Sundial Compass</strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <fieldset id="homedecor" style="display:none;">
+                            <table>
+                                <tr class="close">
+                                    <td style="width:2%;">
+                                        <img src="https://m.media-amazon.com/images/I/81hH5xh59FL._AC_UL400_.jpg" width="150" height="150" />
+                                    </td>
+                                    <td style="width: 5%;">
+                                        <strong>Singing Bowl</strong>
+                                    </td>
+                                </tr>
+                                <tr class="close">
+                                    <td style="width:2%;">
+                                        <img src="https://m.media-amazon.com/images/I/81RyP6oLNxL._AC_SL1500_.jpg" width="150" height="150" />
+                                    </td>
+                                    <td style="width: 5%;">
+                                        <strong>Antique Decor Decorative Owl</strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
                         <fieldset>
                             <span><strong>Customer Info</strong></span>
                             <div class="row">
@@ -163,12 +203,12 @@
                             </div>
                             <div class="row">
                                 <div class="form-group col">
-                                    <button type="submit" class="btn btn-secondary mt-4 width-150px">Search</button>
+                                    <button type="button" class="btn btn-secondary mt-4 width-150px">Search</button>
                                     &nbsp;
-                                    <button type="submit" class="btn btn-primary mt-4 width-150px">Save</button>
+                                    <button type="button" class="btn btn-primary mt-4 width-150px">Save</button>
                                     &nbsp;
-                                    <button type="submit" class="btn btn-secondary mt-4 width-150px">Clear</button>
-                                </div>     
+                                    <button type="button" class="btn btn-secondary mt-4 width-150px">Clear</button>
+                                </div>
                             </div>
                         </fieldset>
                     </div>
@@ -178,3 +218,20 @@
     </div>
 </form>
 
+<script>
+    $("#divHome").click(function () {
+        $("#homedecor").show();
+        $("#cate").hide();
+    });
+
+    $("#divCollectible").click(function () {
+        $("#collectible").show();
+        $("#cate").hide();
+    });
+
+    $(".close").click(function () {
+        $("#collectible").hide();
+        $("#homedecor").hide();
+        $("#cate").show();
+    });
+</script>
