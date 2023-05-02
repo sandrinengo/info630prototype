@@ -205,6 +205,10 @@
     <Content Include="Views\Admin\SpecialRequest.cshtml" />
     <Content Include="Views\Report\Inventory.cshtml" />
     <Content Include="Views\Admin\InventoryDetails.cshtml" />
+    <Content Include="Views\Admin\OrderStock.cshtml" />
+    <Content Include="Views\Admin\ReceiveStock.cshtml" />
+    <Content Include="Views\Admin\ReturnStock.cshtml" />
+    <Content Include="Views\Admin\TransferStock.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

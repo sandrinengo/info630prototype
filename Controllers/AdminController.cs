@@ -78,5 +78,25 @@ namespace Prototype.Controllers
         public ActionResult SpecialRequest() { 
             return View();
         }
+
+        public ActionResult OrderStock()
+        {
+            return View();
+        }
+
+        public ActionResult ReceiveStock()
+        {
+            return View();
+        }
+
+        public ActionResult ReturnStock()
+        {
+            return View();
+        }
+
+        public ActionResult TransferStock()
+        {
+            return View();
+        }
     }
 }
